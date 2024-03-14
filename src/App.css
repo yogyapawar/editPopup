@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.wrap-section {padding: 50px 0;}
+.wrap-section h1 {text-align: center; margin-bottom: 16px;} 
+.table {border: 1px solid #000000 !important; border-collapse: collapse; }
+.table tr td {border: 1px solid #000000;}
+.table .btn {
+  font-size: 18px;
+  line-height: 1;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table .btn:hover {
+  border: 1px solid #000;
+  font-size: 18px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table .btn span {
+  padding-left: 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table .btn.ml1{margin: 5px 5px 5px 0;background: #ffc004;}
+.table .btn.ml1 svg, .table .btn.ml2 svg {
+  vertical-align: bottom;
+}
+.table .btn.ml2{background: red;margin: 5px 5px 5px 0;}
+.table .btn.ml1:hover, .table .btn.ml2:hover {background-color: transparent;}
+.toolbar button {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: green;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+.table tr th {background-color: #000000;color: #ffffff;}
+.toolbar button.btn {  font-size: 18px;
+  line-height: 1;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius:6px; }
+.toolbar button span { padding-left: 8px;}
+.formDesign label,
+.formDesign input,
+.formDesign textarea {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.formDesign label {
+  padding-top: 30px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-responsive-modal-modal {
+  background: #acacac !important;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  max-width: 600px !important;
+  width: 100%;
+  padding: 50px !important;
+}
+
+.formDesign h2 {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.formDesign input,
+.formDesign textarea {
+  padding: 10px;
+  border-radius: 6px;
+  /* background: transparent; */
+  border: 1px solid #000;
+  outline: none;
+  margin-top: 5px;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 90%);
+}
+
+.formDesign button {
+  line-height: 1;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: rgb(179, 86, 9);
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.formDesign button:hover {
+  border: 1px solid #000;
+}
+
+.table tr {
+  vertical-align: middle;
+}
+
+@media(max-width:767.98px) {
+  .react-responsive-modal-modal {max-width:520px; width: 90%; margin: 0 auto; padding: 25px !important;}
+  .container {max-width: 96% !important;}
+  .wrap-section {padding: 25px 0;}
+}
+@media(max-width:576px) { 
+  .react-responsive-modal-modal {max-width:100%; padding: 20px 15px !important;}
+  .container {max-width: 96%;}
 }
